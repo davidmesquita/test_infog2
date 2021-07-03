@@ -1,6 +1,9 @@
 FROM python:3
 # Puxando a imagem mais estável
 
+
+heroku config:set DISABLE_COLLECTSTATIC=1
+
 ENV PYTHONUNBUFFERED=1
 # Mostra o output no terminal comandos python executados
 
